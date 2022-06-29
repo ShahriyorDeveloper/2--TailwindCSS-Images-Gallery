@@ -1,0 +1,19 @@
+1. npm i -D tailwindcss postcss-cli autoprefixer ni ham o`rnatamiz.
+2. npx tailwind init tailwind.js --full buni tailwindni ishlatish uchun o`rnatamiz.
+3. postcss.js yaratamiz va ichida tailwind va boshqa css larni ishlastib qo`yamiz.
+
+4. assets papkani ichidagi file lari bilan yaratamiz.
+5. packej.json da "build:css": "postcss src/assets/tailwind.css -o src/assets/main.css" shuni yozamiz scriptda.
+6. css larni yaratib bo`lib appga tailwindni code laridan foydalanib card yaratib olamiz va Pixabay dan kalitni olib .env filega joylab qo`yamiz.
+7. appdagi cardni components papkani ichidagi imagesCard ga joylemiz.
+8. har hil rasm chaqirish uchun imagesCard da props bo`lib {images} keladi va <img src={image.webformatURL} alt="" className="w-full" /> bu img da keladi.
+
+
+Qisqa ketma-ketlik : 
+
+1. tailwind.css ni o`rnatib olamiz va app.js da bitta dars yaratib rasmni random keladigan qilamiz.
+2. app.js da rasmlarni api orqali ob kelamiz (fetch, map dan foydalanamiz).
+3. imagesCard file yaratib ichida rasmlarni random qib ob kelamiz.
+3. isLoadingdan foydalanamiz.
+4. imagesSearch file yaratamiz.
+5. 404 page yaratamiz  : {!isLoading && images.length === 0 && <h1 className="text-6xl text-center mx-auto mt-32">No Images Found</h1>}
